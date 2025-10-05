@@ -7,25 +7,37 @@
   <script src="./src/prog.js"defer></script>
   <link rel="stylesheet" href="./src/style.css">
   <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="bg-black">
+  <div id="particles-js" class="absolute inset-0 -z-10"></div>
   <header class="bg-black">
-  <nav class="gap-2 flex justify-between">
-  <h1 class=" text-white font-bold text-4xl">pedro krefta</h1>
-  <div class="flex justify-center mr-80">
-  <a class=" py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:scale-100 hover:underline hover:transition duration-300 hover:text-3xl text-white text-2xl " href="index.html">inicio</a>
-  <a class=" py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:scale-100 hover:underline hover:transition duration-300 hover:text-3xl text-white text-2xl " href="sobre.html">sobre mim</a>
-  <a class=" py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:scale-100 hover:underline hover:transition duration-300 hover:text-3xl text-white text-2xl " href="projetos.html">projetos</a>
+ <nav class="relative flex items-center w-full px-8 py-4">
+  <h1 class="text-white font-bold text-4xl tracking-tight">dev full stack</h1>
+
+  <div class="absolute left-1/2 -translate-x-1/2 flex gap-6">
+    <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="index.html">inicio</a>
+    <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="sobre.html">sobre mim</a>
+    <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="projetos.html">projetos</a>
   </div>
- </nav>
+</nav>
+
+
   <div class="w-full h-[2px] bg-white"></div>
   </header>
-  <main>
-    <div id="particles-js"></div>
-    <div class="ml-40 mt-56 w-4xl h-96 bg-white/50 rounded-2xl p-7" >
-      <h1 class="font-bold text-6xl bg-gradient-to-r from-purple-900 via-blue-700 to-blue-300 bg-clip-text text-transparent ">empresa de desenvolvimento</h1>
-      <p class="text-4xl text-white    ">frase de efeito a ser definida</p>
-    </div>
-  </main>
+  <section class="relative  h-screen">
+  
+  <div data-aos="fade-down" class="mt-80 ml-60 flex flex-col ">
+    <h1 class="font-bold text-6xl bg-gradient-to-r from-purple-900 via-blue-700 to-blue-300 bg-clip-text text-transparent">
+      empresa de desenvolvimento
+    </h1>
+    <p class="text-4xl text-white mt-4">
+      transformando ideias em soluções digitais
+    </p>
+  </div>
+</section>
+ <section class="h-screen flex  snap-start">
+    <h1 class="text-white text-5xl">Sobre</h1>
 </body>
 </html>
