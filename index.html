@@ -4,40 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="./src/prog.js"defer></script>
+  <script src="./src/prog.js" defer></script>
   <link rel="stylesheet" href="./src/style.css">
   <link href="./src/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-black">
   <div id="particles-js" class="absolute inset-0 -z-10"></div>
   <header class="bg-black">
- <nav class="relative flex items-center w-full px-8 py-4">
-  <h1 class="text-white font-bold text-4xl tracking-tight">dev full stack</h1>
+    <nav class="relative flex items-center w-full px-8 py-4">
+      <h1 class="text-white font-bold text-4xl tracking-tight">dev full stack</h1>
 
-  <div class="absolute left-1/2 -translate-x-1/2 flex gap-6">
-    <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="index.html">inicio</a>
-    <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="sobre.html">sobre mim</a>
-    <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="projetos.html">projetos</a>
-  </div>
-</nav>
+      <div class="absolute left-1/2 -translate-x-1/2 flex gap-6">
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="index.html">inicio</a>
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="sobre.html">sobre mim</a>
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="projetos.html">projetos</a>
+      </div>
+    </nav>
 
+    <div class="w-full h-[2px] bg-white"></div>
+  </header>
+
+  <section class="relative h-screen">
+    <div data-aos="fade-down" class="mt-64 ml-52 flex justify-center flex-col">
+      <div class="flex items-center gap-4 mb-4">
+        <p class="text-white text-5xl">bem vindo!</p>
+        <!-- Fantasminha do Pacman -->
+        <div id="ghost">
+          <div id="red">
+            <div id="pupil"></div>
+            <div id="pupil1"></div>
+            <div id="eye"></div>
+            <div id="eye1"></div>
+            <div id="top0"></div>
+            <div id="top1"></div>
+            <div id="top2"></div>
+            <div id="top3"></div>
+            <div id="top4"></div>
+            <div id="st0"></div>
+            <div id="st1"></div>
+            <div id="st2"></div>
+            <div id="st3"></div>
+            <div id="st4"></div>
+            <div id="st5"></div>
+            <div id="an1"></div>
+            <div id="an2"></div>
+            <div id="an3"></div>
+            <div id="an4"></div>
+            <div id="an5"></div>
+            <div id="an6"></div>
+            <div id="an7"></div>
+            <div id="an8"></div>
+            <div id="an9"></div>
+            <div id="an10"></div>
+            <div id="an11"></div>
+            <div id="an12"></div>
+            <div id="an13"></div>
+            <div id="an14"></div>
+            <div id="an15"></div>
+            <div id="an16"></div>
+            <div id="an17"></div>
+            <div id="an18"></div>
+          </div>
+          <div id="shadow"></div>
+        </div>
+      </div>
+      
+      <h1 class="font-bold text-6xl bg-gradient-to-r from-purple-900 via-blue-700 to-blue-300 bg-clip-text text-transparent">
+        Meu nome é Pedro Krefta
+      </h1>
+      <div class="text-lg text-white mt-4 max-w-5xl">
+      </div>
+      <a href="https://github.com/pedro-krefta" target="_blank" 
+        class="inline-block px-4 py-2 mt-6 bg-gray-400 text-white font-semibold rounded-lg shadow-md hover:bg-gray-500 transition max-w-14">
+        <i class="fab fa-github text-2xl"></i>
+      </a>
+    </div>
+  </section>
 
   <div class="w-full h-[2px] bg-white"></div>
-  </header>
-  <section class="relative  h-screen">
   
-  <div data-aos="fade-down" class="mt-80 ml-60 flex flex-col ">
-    <h1 class="font-bold text-6xl bg-gradient-to-r from-purple-900 via-blue-700 to-blue-300 bg-clip-text text-transparent">
-      empresa de desenvolvimento
-    </h1>
-    <p class="text-4xl text-white mt-4">
-      transformando ideias em soluções digitais
-    </p>
-  </div>
-</section>
- <section class="h-screen flex  snap-start">
-    <h1 class="text-white text-5xl">Sobre</h1>
+  <section class="h-screen flex justify-center items-center snap-start">
+    <h1 class="text-white text-5xl font-bold">sobre mim</h1>
+  </section>
 </body>
 </html>
