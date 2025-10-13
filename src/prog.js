@@ -14,3 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     once: true,
   });
 });
+
+function MostrarEsconder(conteudoId) {
+  const conteudo = document.getElementById(conteudoId);
+  if (conteudo) {
+    conteudo.classList.toggle("hidden");
+  }
+}

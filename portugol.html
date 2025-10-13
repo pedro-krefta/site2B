@@ -13,5 +13,85 @@
 </head>
 <body class="bg-black">
   <div id="particles-js" class="absolute inset-0 -z-10"></div>
+
+  <header class="bg-black">
+    <nav class="relative flex items-center w-full px-8 py-4">
+      <h1 class="text-white font-bold text-4xl tracking-tight">dev full stack</h1>
+
+      <div class="absolute left-1/2 -translate-x-1/2 flex gap-6">
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="./index.html">inicio</a>
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="">perguntas</a>
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="">projetos</a>
+      </div>
+    </nav>
+
+    <div class="w-full h-[2px] bg-white"></div>
+  </header>
+  
+  <section class="min-h-screen flex justify-center items-center">
+  <div data-aos="fade-down" class="flex flex-col items-center text-center">
+    <p class="text-white text-5xl">Bem-vindo!</p>
+    <h1 class="font-bold text-7xl bg-gradient-to-r from-purple-900 via-blue-700 to-blue-300 bg-clip-text text-transparent mt-4">
+      Logica Computacional
+    </h1>
+    <p class="text-white font-bold text-4xl mt-2">Professor:Carlos Roberto</p>
+  </div>
+</section>
+
+   <div class="w-full h-[2px] bg-white"></div>
+
+<section class="min-h-screen">
+  <h1 class="text-white text-5xl text-center font-bold mt-10">perguntas</h1>
+
+  <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
+
+  
+    <div class="flex flex-col items-start space-y-8">
+
+      <div>
+        <button onclick="MostrarEsconder('conteudo1')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
+          O que são fluxogramas? Qual a sua simbologia básica?
+        </button>
+        <div id="conteudo1" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
+          <p>Fluxogramas são diagramas visuais que representam a sequência de passos de um processo ou fluxo de trabalho. Eles usam uma variedade de símbolos padronizados e setas para mostrar as etapas, decisões e o fluxo de informações de maneira clara e concisa. A simbologia básica inclui oval/elipse para início e fim, retângulo para um processo/ação, losango para decisões, e paralelogramo para entrada/saída de dados. </p>
+        </div>
+      </div>
+
+      <div>
+        <button onclick="MostrarEsconder('conteudo2')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
+         O que são algoritmos? Onde são usados?
+        </button>
+        <div id="conteudo2" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
+          <p>Um algoritmo é uma sequência de instruções bem definidas, normalmente usadas para resolver problemas de matemática específicos, executar tarefas, ou para realizar cálculos e equações. A origem da palavra remete a Al Khowarizmi, famoso matemático árabe do século IX</p>
+        </div>
+      </div>
+
+      <div>
+        <button onclick="MostrarEsconder('conteudo3')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
+        O que são variáveis e constantes?
+        </button>
+        <div id="conteudo3" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
+          <p>Em programação, uma variável é um item de dados nomeado cujo valor pode ser alterado durante a execução de um programa, funcionando como uma caixa que pode guardar diferentes conteúdos. Já uma constante é um item de dados nomeado com um valor predefinido que não pode ser modificado após sua definição, permanecendo fixo durante todo o programa. </p>
+        </div>
+      </div>
+
+      <div>
+        <button onclick="MostrarEsconder('conteudo4')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
+          Quais os tipos de dados mais usados em algoritmos (portugol)? booleanos, caracter, cadeia (string), inteiro, real, vetor.
+        </button>
+        <div id="conteudo4" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
+          <p>Os tipos de dados mais usados em algoritmos (Portuguol) são inteiro, real, caractere, cadeia (string), booleano e vetor. O tipo inteiro armazena números sem casas decimais, o real armazena números com casas decimais, e o caractere representa um único caractere. A cadeia armazena sequências de caracteres (texto), o booleano armazena os valores lógicos verdadeiro ou falso, e o vetor é usado para armazenar múltiplos valores do mesmo tipo em uma única estrutura. </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex justify-center items-start w-full lg:w-auto">
+      <img src="./imagens/logo_portugol.png"  class="w-[400px] h-[400px] object-contain">
+    </div>
+
+  </div>
+</section>
+
 </body>
 </html>

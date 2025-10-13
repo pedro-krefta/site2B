@@ -13,6 +13,88 @@
 </head>
 <body class="bg-black">
   <div id="particles-js" class="absolute inset-0 -z-10"></div>
+
+  <header class="bg-black">
+    <nav class="relative flex items-center w-full px-8 py-4">
+      <h1 class="text-white font-bold text-4xl tracking-tight">dev full stack</h1>
+
+      <div class="absolute left-1/2 -translate-x-1/2 flex gap-6">
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="./index.html">inicio</a>
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="">PERGUNTAS</a>
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="">projetos</a>
+      </div>
+    </nav>
+
+    <div class="w-full h-[2px] bg-white"></div>
+  </header>
+
+
+  <section class="min-h-screen flex justify-center items-center">
+  <div data-aos="fade-down" class="flex flex-col items-center text-center">
+    <p class="text-white text-5xl">Bem-vindo!</p>
+    <h1 class="font-bold text-7xl bg-gradient-to-r from-purple-900 via-blue-700 to-blue-300 bg-clip-text text-transparent mt-4">
+      Fundamentos de Banco de Dados
+    </h1>
+    <p class="text-white font-bold text-4xl mt-2">Professor: José Ricardo Maçaneiro</p>
+  </div>
+</section>
+
+   <div class="w-full h-[2px] bg-white"></div>
+
+<section class="min-h-screen">
+  <h1 class="text-white text-5xl text-center font-bold mt-10">perguntas</h1>
+
+  <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
+
   
+    <div class="flex flex-col items-start space-y-8">
+
+      <div>
+        <button onclick="MostrarEsconder('conteudo1')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
+          O que é um SGBD? Tipos e Aplicações?
+        </button>
+        <div id="conteudo1" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
+          <p>Um SGBD (Sistema Gerenciador de Banco de Dados) é um software que atua como intermediário entre o usuário e os dados, permitindo criar, gerenciar, armazenar e acessar bancos de dados de forma segura e eficiente. Ele abstrai a complexidade técnica, oferecendo uma interface para manipulação, controle e recuperação dos dados, mantendo sua integridade e organização.</p>
+        </div>
+      </div>
+
+      <div>
+        <button onclick="MostrarEsconder('conteudo2')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
+          Quais os principais bancos de dados?
+        </button>
+        <div id="conteudo2" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
+          <p>Os principais bancos de dados incluem Oracle Database, MySQL, Microsoft SQL Server e PostgreSQL, que são amplamente utilizados e dominam o mercado relacional. Outros sistemas populares incluem MongoDB (NoSQL), Redis (em memória) e Cassandra (NoSQL de colunas).</p>
+        </div>
+      </div>
+
+      <div>
+        <button onclick="MostrarEsconder('conteudo3')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
+          O que é um dicionário de dados? Quais os tipos de dados de um banco de dados?
+        </button>
+        <div id="conteudo3" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
+          <p>Um dicionário de dados é um registro de metadados que descreve a estrutura de um banco de dados, incluindo nomes de tabelas, atributos, tipos de dados, tamanhos, restrições e relacionamentos. Os tipos de dados de um banco de dados são os diferentes formatos de informação que podem ser armazenados, como números inteiros, textos, datas, valores booleanos, entre outros.</p>
+        </div>
+      </div>
+
+      <div>
+        <button onclick="MostrarEsconder('conteudo4')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
+          O que é uma modelagem de banco de dados? E o modelo DER? MER?
+        </button>
+        <div id="conteudo4" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
+          <p>A modelagem de banco de dados é a criação de um modelo lógico para representar as informações e relacionamentos de um sistema. O MER (Modelo Entidade-Relacionamento) é o modelo conceitual que descreve os objetos (entidades) e como eles se conectam (relacionamentos), enquanto o DER (Diagrama Entidade-Relacionamento) é a representação gráfica e detalhada desse modelo, incluindo atributos, chaves e outros detalhes técnicos.</p>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="flex justify-center items-start w-full lg:w-auto">
+      <img src="./imagens/my-sql-removebg-preview.png" alt="MySQL Logo"
+           class="w-[400px] h-[400px] object-contain rounded-b-full">
+    </div>
+
+  </div>
+</section>
+
 </body>
 </html>
