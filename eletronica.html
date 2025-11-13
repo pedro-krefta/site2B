@@ -54,7 +54,7 @@
   <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
 
   
-    <div class="flex flex-col items-start space-y-8">
+    <div class="flex flex-col items-start space-y-8 ">
 
       <div>
         <button onclick="MostrarEsconder('conteudo1')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
@@ -103,36 +103,54 @@
 <div class="w-full h-[2px] bg-white"></div>
 
 
-<section class="min-h-screen">
-<h1 class="text-white font-bold text-5xl text-center">scripts para calculo</h1>
-<div class=" grid grid-cols-3 gap-14 mt-5 content-center">
-  <div class="flex flex-col items-start gap-2">
-    <label for="option" class="text-lg font-semibold text-gray-800 dark:text-gray-200">
-      Escolha uma opção:
-    </label>
+<section class="min-h-screen mt-20">
+  <h1 class="text-white font-bold text-5xl text-center mb-10">Calculadora Elétrica</h1>
+
+  <div class="grid md:grid-cols-3 gap-10 justify-center px-10">
+    
   
-    <select
-      id="option"
-      class="w-64 border-2 border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 
-             text-gray-800 dark:text-gray-100 font-medium text-lg px-4 py-2
-             focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500
-             hover:border-blue-400 dark:hover:border-gray-500 transition duration-200 ease-in-out"
-    >
-      <option value="" selected disabled class="text-gray-500 dark:text-gray-400">
-        --- Selecione uma Opção ---
-      </option>
-      <option value="tensao" class="text-gray-800 dark:text-gray-100">Tensão</option>
-      <option value="corrente" class="text-gray-800 dark:text-gray-100">Corrente</option>
-      <option value="resist" class="text-gray-800 dark:text-gray-100">Resistência</option>
-    </select>
+    <div class="bg-white/20 rounded-2xl shadow-lg p-6 text-center backdrop-blur-sm">
+      <h2 class="text-3xl text-white font-semibold mb-4">Calcular Resistência</h2>
+
+      <label class="block text-lg text-white mb-1">Digite a Tensão (V):</label>
+      <input type="number" id="tensao1" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="Ex: 12">
+
+      <label class="block text-lg text-white mb-1">Digite a Corrente (A):</label>
+      <input type="number" id="corrente1" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="Ex: 2">
+
+      <button id="btnResistencia" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition">Calcular</button>
+      <p id="res1" class="text-white text-2xl mt-4"></p>
+    </div>
+
+
+    <div class="bg-white/20 rounded-2xl shadow-lg p-6 text-center backdrop-blur-sm">
+      <h2 class="text-3xl text-white font-semibold mb-4">Calcular Tensão</h2>
+
+      <label class="block text-lg text-white mb-1">Digite a Resistência (Ω):</label>
+      <input type="number" id="resistencia2" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="Ex: 6">
+
+      <label class="block text-lg text-white mb-1">Digite a Corrente (A):</label>
+      <input type="number" id="corrente2" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="Ex: 2">
+
+      <button id="btnTensao" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition">Calcular</button>
+      <p id="res2" class="text-white text-2xl mt-4"></p>
+    </div>
+
+
+    <div class="bg-white/20 rounded-2xl shadow-lg p-6 text-center backdrop-blur-sm">
+      <h2 class="text-3xl text-white font-semibold mb-4">Calcular Corrente</h2>
+
+      <label class="block text-lg text-white mb-1">Digite a Tensão (V):</label>
+      <input type="number" id="tensao3" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="Ex: 12">
+
+      <label class="block text-lg text-white mb-1">Digite a Resistência (Ω):</label>
+      <input type="number" id="resistencia3" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="Ex: 6">
+
+      <button id="btnCorrente" class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded transition">Calcular</button>
+      <p id="res3" class="text-white text-2xl mt-4"></p>
+    </div>
+
   </div>
-
-  <div id="inputs" class="bg-white/20 h-[400px] w-[400px] rounded-2xl flex flex-col justify-center items-center  text-center p-4 text-white hover:shadow-lg hover:shadow-cyan-500/50 hover:scale-105  transition duration-300 ease-out">
-</div>
-
-
-</div>
-<div id="res" class="text-red-500 text-4xl"></div>
 </section>
 
 </body>
