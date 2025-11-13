@@ -118,7 +118,7 @@
       <label class="block text-lg text-white mb-1">Digite a Corrente (A):</label>
       <input type="number" id="corrente1" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="Ex: 2">
 
-      <button id="btnResistencia" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition">Calcular</button>
+      <button onclick="calResis()" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition">Calcular</button>
       <p id="res1" class="text-white text-2xl mt-4"></p>
     </div>
 
@@ -132,8 +132,8 @@
       <label class="block text-lg text-white mb-1">Digite a Corrente (A):</label>
       <input type="number" id="corrente2" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="Ex: 2">
 
-      <button id="btnTensao" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition">Calcular</button>
-      <p id="res2" class="text-white text-2xl mt-4"></p>
+      <button onclick="calTensao()" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition">Calcular</button>
+      <div id="res2" class="text-white text-2xl font-bold"></div>
     </div>
 
 
@@ -146,7 +146,7 @@
       <label class="block text-lg text-white mb-1">Digite a Resistência (Ω):</label>
       <input type="number" id="resistencia3" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="Ex: 6">
 
-      <button id="btnCorrente" class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded transition">Calcular</button>
+      <button onclick="calCorrente()" class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded transition">Calcular</button>
       <p id="res3" class="text-white text-2xl mt-4"></p>
     </div>
 
