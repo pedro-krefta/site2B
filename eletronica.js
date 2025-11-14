@@ -32,3 +32,24 @@ function calResis(){
 
     res1.innerHTML = `o valor da resistencia é: ${resistencia}`
 }
+
+
+function calcularPotencia() {
+    const V = Number(document.getElementById('tensao').value)
+    const I = Number(document.getElementById('corrente').value)
+    const R = Number(document.getElementById('resistencia').value)
+    const res = document.getElementById('resultado')
+
+    let P
+
+    if (V && I) P = V * I                  
+    else if (I && R) P = (I * I) * R        
+    else if (V && R) P = (V * V) / R     
+    else {
+        res.innerHTML = "Informe pelo menos dois valores."
+        return;
+    }
+
+    res.innerHTML
+     = `Potência: ${P.toFixed(2)} W`;
+}
