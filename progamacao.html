@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="./prog.js"defer></script>
 </head>
 <body class="bg-black">
   <div id="particles-js" class="absolute inset-0 -z-10"></div>
@@ -20,8 +21,8 @@
 
       <div class="absolute left-1/2 -translate-x-1/2 flex gap-6">
         <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="./index.html">inicio</a>
-        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="">perguntas</a>
-        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="">projetos</a>
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="#perguntas">perguntas</a>
+        <a class="py-4 px-6 rounded-2xl hover:bg-white hover:text-black hover:font-bold hover:underline hover:transition duration-300 text-white text-2xl" href="#projetos">projetos</a>
       </div>
     </nav>
 
@@ -40,7 +41,7 @@
 
    <div class="w-full h-[2px] bg-white"></div>
 
-<section class="min-h-screen">
+<section id="perguntas" class="min-h-screen">
   <h1 class="text-white text-5xl text-center font-bold mt-10">perguntas</h1>
 
   <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
@@ -92,6 +93,78 @@
 
   </div>
 </section>
+
+<section id="projetos" class="flex flex-col items-center space-y-16 py-16">
+  
+ 
+  <div class="bg-white/20 w-[600px] h-[550px] p-10 rounded-2xl flex flex-col items-center">
+    <h1 class="text-4xl text-white mt-4 text-center">Códigos que aprendemos durante o ano</h1>
+    <p class="text-2xl text-white mt-4 text-center">Script para ordenar números de 1 a 20, em ordem crescente e decrescente</p>
+    <button class="bg-green-500 p-5 rounded-2xl mt-4" onclick="ordenarC()">Ordenar Crescente</button>
+    <button class="bg-blue-400 p-5 rounded-2xl mt-4" onclick="ordenarD()">Ordenar Decrescente</button>
+    <p class="text-white text-lg mt-4 text-center" id="res"></p>
+  </div>
+
+  <div class="bg-white/20 w-[600px] h-[550px] p-10 rounded-2xl flex flex-col items-center">
+    <p class="text-4xl text-white text-center">Programa para ordenar números aleatórios de 1 a 20 usando Bubble Sort</p>
+    <button class="bg-green-500 rounded-2xl p-5 mt-6" onclick="principal()">Gerar</button>
+    <p class="text-2xl text-white mt-4 text-center" id="res2"></p>
+  </div>
+
+ 
+  <div class="bg-white/20 w-[600px] h-[550px] p-10 rounded-2xl flex flex-col items-center">
+    <p class="text-4xl text-white text-center">Programa para somar 10 números aleatórios de 1 a 220 em um array</p>
+    <button class="bg-green-500 rounded-2xl p-5 mt-6" onclick="gerarEsomar()">Somar</button>
+    <p class="text-2xl text-white mt-4 text-center" id="res3"></p>
+  </div>
+
+  <div class="bg-white/20 w-[600px] h-[550px] p-10 rounded-2xl flex flex-col items-center">
+    <p class="text-4xl text-white text-center">Programa para gerar uma matriz 3 x 3 de números aleatórios de 1 a 20</p>
+    <button class="bg-green-500 rounded-2xl p-5 mt-6" onclick="principal()">Gerar</button>
+    <p class="text-2xl text-white mt-4 text-center" id="res4"></p>
+  </div>
+
+
+  <div class="bg-white/20 w-[600px] h-[550px] p-10 rounded-2xl flex flex-col items-center">
+    <p class="text-4xl text-white text-center">Programa para calcular o IMC de uma pessoa</p>
+
+    <label class="block text-lg text-white mb-1 mt-4">Digite o seu peso:</label>
+    <input type="number" id="peso" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="">
+
+    <label class="block text-lg text-white mb-1">Digite a sua altura em metros:</label>
+    <input type="number" id="altura" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="">
+
+    <button class="bg-green-500 rounded-2xl p-5 mt-3" onclick="calcularIMC()">Gerar</button>
+    <p class="text-2xl text-white mt-4 text-center" id="res5"></p>
+  </div>
+
+ 
+  <div class="bg-white/20 w-[600px] h-[550px] p-10 rounded-2xl flex flex-col items-center">
+    <p class="text-4xl text-white text-center">Programa para converter a temperatura em °F / °C</p>
+
+    <label class="block text-lg text-white mb-1 mt-4">Digite "FC" para Fahrenheit → Celsius ou "CF" para Celsius → Fahrenheit:</label>
+    <input type="text" id="tipo" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="">
+
+    <label class="block text-lg text-white mb-1">Digite o valor da temperatura:</label>
+    <input type="number" id="temp" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="">
+
+    <button class="bg-green-500 rounded-2xl p-5 mt-3" onclick="converter()">Converter</button>
+    <p class="text-2xl text-white mt-4 text-center" id="res6"></p>
+  </div>
+
+  
+  <div class="bg-white/20 w-[600px] h-[550px] p-10 rounded-2xl flex flex-col items-center">
+    <p class="text-4xl text-white text-center">Programa para acertar número sorteado</p>
+
+    <label class="block text-lg text-white mb-1 mt-4">Escolha um número de 1 a 20:</label>
+    <input type="number" id="valor" class="w-full p-2 rounded bg-gray-800 text-white mb-3" placeholder="">
+
+    <button class="bg-green-500 rounded-2xl p-5 mt-3" onclick="buscar()">Sortear</button>
+    <p class="text-2xl text-white mt-4 text-center" id="res7"></p>
+  </div>
+
+</section>
+
 
 </body>
 </html>
