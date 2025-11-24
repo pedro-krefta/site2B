@@ -15,9 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function MostrarEsconder(conteudoId) {
-  const conteudo = document.getElementById(conteudoId);
-  if (conteudo) {
-    conteudo.classList.toggle("hidden");
-  }
+function toggleCard(cardId) {
+  const card = document.getElementById(cardId);
+  const icon = document.getElementById('icon' + cardId.slice(-1));
+  
+  card.classList.toggle('max-h-0');
+  card.classList.toggle('max-h-96');
+  icon.classList.toggle('rotate-180');
 }

@@ -48,61 +48,85 @@
   <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
 
   
-    <div class="flex flex-col items-start space-y-8">
+    <section class="py-12 px-4">
+      <div class="max-w-6xl mx-auto">
+       
+          <div class="space-y-6 mb-12">
+         
+              <div class="bg-white rounded-xl shadow-md">
+                  <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card1')">
+                      <h2 class="text-xl font-bold text-gray-800">O que é um SGBD? Tipos e Aplicações?</h2>
+                      <i id="icon1" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+                  </div>
+                  <div id="card1" class="max-h-0 overflow-hidden transition-all">
+                      <div class="px-6 pb-6 text-gray-600">
+                          <p>Um SGBD (Sistema Gerenciador de Banco de Dados) é um software que atua como intermediário entre o usuário e os dados, permitindo criar, gerenciar, armazenar e acessar bancos de dados de forma segura e eficiente. Ele abstrai a complexidade técnica, oferecendo uma interface para manipulação, controle e recuperação dos dados, mantendo sua integridade e organização.</p>
+                      </div>
+                  </div>
+              </div>
 
-      <div>
-        <button onclick="MostrarEsconder('conteudo1')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-          O que é um SGBD? Tipos e Aplicações?
-        </button>
-        <div id="conteudo1" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Um SGBD (Sistema Gerenciador de Banco de Dados) é um software que atua como intermediário entre o usuário e os dados, permitindo criar, gerenciar, armazenar e acessar bancos de dados de forma segura e eficiente. Ele abstrai a complexidade técnica, oferecendo uma interface para manipulação, controle e recuperação dos dados, mantendo sua integridade e organização.</p>
-        </div>
+           
+              <div class="bg-white rounded-xl shadow-md">
+                  <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card2')">
+                      <h2 class="text-xl font-bold text-gray-800">Quais os principais bancos de dados?</h2>
+                      <i id="icon2" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+                  </div>
+                  <div id="card2" class="max-h-0 overflow-hidden transition-all">
+                      <div class="px-6 pb-6 text-gray-600">
+                          <p>Os principais bancos de dados incluem Oracle Database, MySQL, Microsoft SQL Server e PostgreSQL, que são amplamente utilizados e dominam o mercado relacional. Outros sistemas populares incluem MongoDB (NoSQL), Redis (em memória) e Cassandra (NoSQL de colunas).</p>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="bg-white rounded-xl shadow-md">
+                  <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card3')">
+                      <h2 class="text-xl font-bold text-gray-800">O que é um dicionário de dados? Quais os tipos de dados de um banco de dados?</h2>
+                      <i id="icon3" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+                  </div>
+                  <div id="card3" class="max-h-0 overflow-hidden transition-all">
+                      <div class="px-6 pb-6 text-gray-600">
+                          <p>Um dicionário de dados é um registro de metadados que descreve a estrutura de um banco de dados, incluindo nomes de tabelas, atributos, tipos de dados, tamanhos, restrições e relacionamentos. Os tipos de dados de um banco de dados são os diferentes formatos de informação que podem ser armazenados, como números inteiros, textos, datas, valores booleanos, entre outros.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-md">
+                  <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card4')">
+                      <h2 class="text-xl font-bold text-gray-800">O que é uma modelagem de banco de dados? E o modelo DER? MER?</h2>
+                      <i id="icon4" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+                  </div>
+                  <div id="card4" class="max-h-0 overflow-hidden transition-all">
+                      <div class="px-6 pb-6 text-gray-600">
+                          <p>A modelagem de banco de dados é a criação de um modelo lógico para representar as informações e relacionamentos de um sistema. O MER (Modelo Entidade-Relacionamento) é o modelo conceitual que descreve os objetos (entidades) e como eles se conectam (relacionamentos), enquanto o DER (Diagrama Entidade-Relacionamento) é a representação gráfica e detalhada desse modelo, incluindo atributos, chaves e outros detalhes técnicos.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row justify-center items-center gap-8 mb-12">
+              <div class="text-center">
+                  <div class="bg-white p-4 rounded-xl shadow-md mb-4">
+                      <img src="./imagens/DER.png" alt="DER" class="w-72 h-48 object-contain mx-auto">
+                  </div>
+                  <p class="text-lg font-semibold text-white">Diagrama DER</p>
+              </div>
+              <div class="text-center">
+                  <div class="bg-white p-4 rounded-xl shadow-md mb-4">
+                      <img src="./imagens/MER.png" alt="MER" class="w-72 h-48 object-contain mx-auto">
+                  </div>
+                  <p class="text-lg font-semibold text-white">Modelo MER</p>
+              </div>
+          </div>
+
+        
+          <div class="flex justify-center">
+              <div class="bg-white p-6 rounded-xl shadow-md">
+                  <img src="./imagens/my-sql-removebg-preview.png" alt="MySQL Logo" class="w-64 h-64 object-contain">
+              </div>
+          </div>
       </div>
-
-      <div>
-        <button onclick="MostrarEsconder('conteudo2')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-          Quais os principais bancos de dados?
-        </button>
-        <div id="conteudo2" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Os principais bancos de dados incluem Oracle Database, MySQL, Microsoft SQL Server e PostgreSQL, que são amplamente utilizados e dominam o mercado relacional. Outros sistemas populares incluem MongoDB (NoSQL), Redis (em memória) e Cassandra (NoSQL de colunas).</p>
-        </div>
-      </div>
-
-      <div>
-        <button onclick="MostrarEsconder('conteudo3')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-          O que é um dicionário de dados? Quais os tipos de dados de um banco de dados?
-        </button>
-        <div id="conteudo3" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Um dicionário de dados é um registro de metadados que descreve a estrutura de um banco de dados, incluindo nomes de tabelas, atributos, tipos de dados, tamanhos, restrições e relacionamentos. Os tipos de dados de um banco de dados são os diferentes formatos de informação que podem ser armazenados, como números inteiros, textos, datas, valores booleanos, entre outros.</p>
-        </div>
-      </div>
-
-      <div>
-        <button onclick="MostrarEsconder('conteudo4')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-          O que é uma modelagem de banco de dados? E o modelo DER? MER?
-        </button>
-        <div id="conteudo4" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>A modelagem de banco de dados é a criação de um modelo lógico para representar as informações e relacionamentos de um sistema. O MER (Modelo Entidade-Relacionamento) é o modelo conceitual que descreve os objetos (entidades) e como eles se conectam (relacionamentos), enquanto o DER (Diagrama Entidade-Relacionamento) é a representação gráfica e detalhada desse modelo, incluindo atributos, chaves e outros detalhes técnicos.</p>
-        </div>
-      </div>
-
-    </div>
-
-   
-    <div class="w-full h-screen flex justify-center items-end gap-10 pb-10">
-      <img src="./imagens/DER.png" alt="DER" class="w-72 object-contain">
-      <img src="./imagens/MER.png" alt="MER" class="w-72 object-contain">
-    </div>
-    
-
-    
-    <div class="flex justify-center items-start w-full lg:w-auto">
-      <img src="./imagens/my-sql-removebg-preview.png" alt="MySQL Logo"
-           class="w-[400px] h-[400px] object-contain rounded-b-full">
-    </div>
-
-  </div>
-</section>
+    </section>
 
 <section id="projetos">
   <h1>Formulário para cadastro de dados simulando a gravação dos dados</h1>

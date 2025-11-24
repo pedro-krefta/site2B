@@ -46,63 +46,80 @@
   <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
 
   
-    <div class="flex flex-col items-start space-y-8">
-
-      <div>
-        <button onclick="MostrarEsconder('conteudo1')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-          O que são fluxogramas? Qual a sua simbologia básica?
-        </button>
-        <div id="conteudo1" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Fluxogramas são diagramas visuais que representam a sequência de passos de um processo ou fluxo de trabalho. Eles usam uma variedade de símbolos padronizados e setas para mostrar as etapas, decisões e o fluxo de informações de maneira clara e concisa. A simbologia básica inclui oval/elipse para início e fim, retângulo para um processo/ação, losango para decisões, e paralelogramo para entrada/saída de dados. </p>
-        </div>
+    <div class="space-y-6">
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card1', 'icon1')">
+              <h2 class="text-xl font-bold text-gray-800">O que são fluxogramas? Qual a sua simbologia básica?</h2>
+              <i id="icon1" class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+          </div>
+          <div id="card1" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>Fluxogramas são diagramas visuais que representam a sequência de passos de um processo ou fluxo de trabalho. Eles usam uma variedade de símbolos padronizados e setas para mostrar as etapas, decisões e o fluxo de informações de maneira clara e concisa. A simbologia básica inclui oval/elipse para início e fim, retângulo para um processo/ação, losango para decisões, e paralelogramo para entrada/saída de dados.</p>
+              </div>
+          </div>
       </div>
-
-      <div>
-        <button onclick="MostrarEsconder('conteudo2')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-         O que são algoritmos? Onde são usados?
-        </button>
-        <div id="conteudo2" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Um algoritmo é uma sequência de instruções bem definidas, normalmente usadas para resolver problemas de matemática específicos, executar tarefas, ou para realizar cálculos e equações. A origem da palavra remete a Al Khowarizmi, famoso matemático árabe do século IX</p>
-        </div>
+      
+      
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card2', 'icon2')">
+              <h2 class="text-xl font-bold text-gray-800">O que são algoritmos? Onde são usados?</h2>
+              <i id="icon2" class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+          </div>
+          <div id="card2" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>Um algoritmo é uma sequência de instruções bem definidas, normalmente usadas para resolver problemas de matemática específicos, executar tarefas, ou para realizar cálculos e equações. A origem da palavra remete a Al Khowarizmi, famoso matemático árabe do século IX.</p>
+              </div>
+          </div>
       </div>
-
-      <div>
-        <button onclick="MostrarEsconder('conteudo3')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-        O que são variáveis e constantes?
-        </button>
-        <div id="conteudo3" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Em programação, uma variável é um item de dados nomeado cujo valor pode ser alterado durante a execução de um programa, funcionando como uma caixa que pode guardar diferentes conteúdos. Já uma constante é um item de dados nomeado com um valor predefinido que não pode ser modificado após sua definição, permanecendo fixo durante todo o programa. </p>
-        </div>
+      
+      
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card3', 'icon3')">
+              <h2 class="text-xl font-bold text-gray-800">O que são variáveis e constantes?</h2>
+              <i id="icon3" class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+          </div>
+          <div id="card3" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>Em programação, uma variável é um item de dados nomeado cujo valor pode ser alterado durante a execução de um programa, funcionando como uma caixa que pode guardar diferentes conteúdos. Já uma constante é um item de dados nomeado com um valor predefinido que não pode ser modificado após sua definição, permanecendo fixo durante todo o programa.</p>
+              </div>
+          </div>
       </div>
-
-      <div>
-        <button onclick="MostrarEsconder('conteudo4')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-          Quais os tipos de dados mais usados em algoritmos (portugol)? booleanos, caracter, cadeia (string), inteiro, real, vetor.
-        </button>
-        <div id="conteudo4" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Os tipos de dados mais usados em algoritmos (Portuguol) são inteiro, real, caractere, cadeia (string), booleano e vetor. O tipo inteiro armazena números sem casas decimais, o real armazena números com casas decimais, e o caractere representa um único caractere. A cadeia armazena sequências de caracteres (texto), o booleano armazena os valores lógicos verdadeiro ou falso, e o vetor é usado para armazenar múltiplos valores do mesmo tipo em uma única estrutura. </p>
-        </div>
+      
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card4', 'icon4')">
+              <h2 class="text-xl font-bold text-gray-800">Quais os tipos de dados mais usados em algoritmos (portugol)?</h2>
+              <i id="icon4" class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+          </div>
+          <div id="card4" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>Os tipos de dados mais usados em algoritmos (Portuguol) são inteiro, real, caractere, cadeia (string), booleano e vetor. O tipo inteiro armazena números sem casas decimais, o real armazena números com casas decimais, e o caractere representa um único caractere. A cadeia armazena sequências de caracteres (texto), o booleano armazena os valores lógicos verdadeiro ou falso, e o vetor é usado para armazenar múltiplos valores do mesmo tipo em uma única estrutura.</p>
+              </div>
+          </div>
       </div>
-      <div>
-        <button onclick="MostrarEsconder('conteudo5')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-          O que é o portugol? O que é o Portugol Studio?
-        </button>
-        <div id="conteudo5" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Portugol é uma linguagem de programação fictícia usada para ensinar lógica de forma simples, pois utiliza comandos em português. Já o **Portugol Studio** é o programa onde esses algoritmos podem ser escritos, testados e executados, servindo como ambiente de aprendizado para iniciantes.
-            <img src="./imagens/por7.png" alt="">
-          </p>
-        </div>
+      
+     
+      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card5', 'icon5')">
+              <h2 class="text-xl font-bold text-gray-800">O que é o portugol? O que é o Portugol Studio?</h2>
+              <i id="icon5" class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+          </div>
+          <div id="card5" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>Portugol é uma linguagem de programação fictícia usada para ensinar lógica de forma simples, pois utiliza comandos em português. Já o <strong>Portugol Studio</strong> é o programa onde esses algoritmos podem ser escritos, testados e executados, servindo como ambiente de aprendizado para iniciantes.</p>
+                  <div class="mt-4 bg-gray-100 p-4 rounded-lg">
+                      <p class="text-sm text-gray-500 italic">Imagem do Portugol Studio:</p>
+                      <div class="h-40 bg-gray-200 rounded flex items-center justify-center mt-2">
+                          <span class="text-gray-500">[Imagem do Portugol Studio]</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    
-    </div>
-
-    <div class="flex justify-center items-start w-full lg:w-auto">
-      <img src="./imagens/logo_portugol.png"  class="w-[400px] h-[400px] object-contain">
-    </div>
-
   </div>
+</div>
+
 </section>
-<section id="#projetos" class="grid grid-cols-3 gap-10 justify-center items-center">
+<section id="projetos" class="grid grid-cols-3 gap-10 justify-center items-center">
   <img src="./imagens/porEX1-removebg-preview.png" class="w-80 mx-auto" alt="">
   <img src="./imagens/porEX2-removebg-preview.png" class="w-80 mx-auto" alt="">
   <img src="./imagens/porEX3-removebg-preview.png" class="w-80 mx-auto" alt="">

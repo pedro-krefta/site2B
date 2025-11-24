@@ -57,54 +57,70 @@
     <div class="flex flex-row space-x-10 items-start mt-10">
 
      
-      <div class="flex flex-col items-start space-y-8 w-[65%]">
-    
-        <div>
-          <button onclick="MostrarEsconder('conteudo1')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300 max-w-3xl">
-           Arduíno: O que é, Para que serve / aplicações, vantagens e desvantagens. Como o Arduíno funciona? O que é eletrônica embarcada?
-          </button>
-          <div id="conteudo1" class="hidden bg-gray-100 text-gray-900 w-[600px] rounded-2xl p-6 mt-2 border border-gray-300">
-            <p>O Arduino é uma plataforma de prototipagem eletrônica...</p>
-          </div>
-        </div>
-    
-        <div>
-          <button onclick="MostrarEsconder('conteudo2')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300 max-w-3xl">
-          Arduíno: qual a linguagem de programação usada
-          </button>
-          <div id="conteudo2" class="hidden bg-gray-100 text-gray-900 w-[600px] rounded-2xl p-6 mt-2 border border-gray-300">
-            <p>A linguagem de programação principal usada no Arduino...</p>
-          </div>
-        </div>
-    
-        <div>
-          <button onclick="MostrarEsconder('conteudo3')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300 max-w-3xl">
-          O que são entradas e saídas digitais em circuitos integrados
-          </button>
-          <div id="conteudo3" class="hidden bg-gray-100 text-gray-900 w-[600px] rounded-2xl p-6 mt-2 border border-gray-300">
-            <p>Entradas e saídas digitais (E/S digitais) em circuitos como...</p>
-          </div>
-        </div>
-    
-        <div>
-          <button onclick="MostrarEsconder('conteudo4')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300 max-w-3xl">
-            O que é um diodo? LED? Display 7 segmentos?
-          </button>
-          <div id="conteudo4" class="hidden bg-gray-100 text-gray-900 w-[600px] rounded-2xl p-6 mt-2 border border-gray-300">
-            <p>Um diodo é um componente eletrônico...</p>
-    
-            <button onclick="MostrarEsconder('conteudo5')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300 mt-4">
-              Componentes Eletrônicos empregados em serviços
-            </button>
-    
-            <div id="conteudo5" class="hidden bg-gray-100 text-gray-900 w-[600px] rounded-2xl p-6 mt-2 border border-gray-300">
-              <p>Os principais componentes eletrônicos usados em serviços...</p>
+      <div class="space-y-6">
+        <div class="bg-white rounded-xl shadow-md">
+            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card1')">
+                <h2 class="text-xl font-bold text-gray-800">Arduíno: O que é, Para que serve / aplicações, vantagens e desvantagens. Como o Arduíno funciona? O que é eletrônica embarcada?</h2>
+                <i id="icon1" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
             </div>
-    
-          </div>
+            <div id="card1" class="max-h-0 overflow-hidden transition-all">
+                <div class="px-6 pb-6 text-gray-600">
+                    <p>O Arduino é uma plataforma de prototipagem eletrônica de código aberto baseada em hardware e software flexíveis e fáceis de usar. É destinado a artistas, designers, hobbistas e qualquer pessoa interessada em criar objetos ou ambientes interativos.</p>
+                </div>
+            </div>
         </div>
-    
-      </div>
+
+        <div class="bg-white rounded-xl shadow-md">
+            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card2')">
+                <h2 class="text-xl font-bold text-gray-800">Arduíno: qual a linguagem de programação usada</h2>
+                <i id="icon2" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+            </div>
+            <div id="card2" class="max-h-0 overflow-hidden transition-all">
+                <div class="px-6 pb-6 text-gray-600">
+                    <p>A linguagem de programação principal usada no Arduino é baseada em C/C++, com algumas simplificações e bibliotecas específicas para facilitar o uso com os microcontroladores da plataforma.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md">
+            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card3')">
+                <h2 class="text-xl font-bold text-gray-800">O que são entradas e saídas digitais em circuitos integrados</h2>
+                <i id="icon3" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+            </div>
+            <div id="card3" class="max-h-0 overflow-hidden transition-all">
+                <div class="px-6 pb-6 text-gray-600">
+                    <p>Entradas e saídas digitais (E/S digitais) em circuitos como o Arduino são pinos que podem ler ou escrever sinais digitais, ou seja, que possuem apenas dois estados: HIGH (5V) ou LOW (0V).</p>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="bg-white rounded-xl shadow-md">
+            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card4')">
+                <h2 class="text-xl font-bold text-gray-800">O que é um diodo? LED? Display 7 segmentos?</h2>
+                <i id="icon4" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+            </div>
+            <div id="card4" class="max-h-0 overflow-hidden transition-all">
+                <div class="px-6 pb-6 text-gray-600">
+                    <p>Um diodo é um componente eletrônico que permite a passagem de corrente elétrica em apenas um sentido. O LED (Diodo Emissor de Luz) é um tipo especial de diodo que emite luz quando energizado. O display de 7 segmentos é um componente que usa 7 LEDs organizados para formar números e letras.</p>
+                    
+
+                    <div class="bg-gray-50 rounded-lg mt-4">
+                        <div class="flex justify-between items-center p-4 cursor-pointer" onclick="toggleCard('card5')">
+                            <h3 class="text-lg font-semibold text-gray-800">Componentes Eletrônicos empregados em serviços</h3>
+                            <i id="icon5" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+                        </div>
+                        <div id="card5" class="max-h-0 overflow-hidden transition-all">
+                            <div class="px-4 pb-4 text-gray-600">
+                                <p>Os principais componentes eletrônicos usados em serviços incluem resistores, capacitores, transistores, diodos, LEDs, microcontroladores, sensores diversos e displays, cada um com funções específicas nos circuitos eletrônicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     
   
       <div class="flex flex-col items-center space-y-6 ">
