@@ -54,80 +54,138 @@
   <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
 
   
-    <div class="flex flex-col items-start space-y-8 ">
-
-      <div>
-        <button onclick="MostrarEsconder('conteudo1')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-         oque são rede de computadores e redes minimas?
-        </button>
-        <div id="conteudo1" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Redes de Computadores são conjuntos de dispositivos interligados — como computadores, celulares e servidores — que trocam informações e compartilham recursos. Elas permitem comunicação, acesso à internet, compartilhamento de arquivos e uso de serviços remotos. Uma rede é formada por dispositivos finais, meios de transmissão (como cabos e Wi-Fi), equipamentos de rede (roteadores e switches) e protocolos que organizam a comunicação, já Rede mínima é a forma mais simples de uma rede de computadores, composta por apenas dois ou poucos dispositivos conectados diretamente. Ela permite a troca básica de informações entre esses equipamentos, usando cabos ou conexão sem fio..</p>
-        </div>
+    <div class="space-y-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card1')">
+              <h2 class="text-xl font-bold text-gray-800">O que são rede de computadores e redes mínimas?</h2>
+              <i id="icon1" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+          </div>
+          <div id="card1" class="max-h-0 overflow-hidden transition-all">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>Redes de Computadores são conjuntos de dispositivos interligados — como computadores, celulares e servidores — que trocam informações e compartilham recursos. Elas permitem comunicação, acesso à internet, compartilhamento de arquivos e uso de serviços remotos. Uma rede é formada por dispositivos finais, meios de transmissão (como cabos e Wi-Fi), equipamentos de rede (roteadores e switches) e protocolos que organizam a comunicação, já Rede mínima é a forma mais simples de uma rede de computadores, composta por apenas dois ou poucos dispositivos conectados diretamente. Ela permite a troca básica de informações entre esses equipamentos, usando cabos ou conexão sem fio.</p>
+              </div>
+          </div>
       </div>
 
-      <div>
-        <button onclick="MostrarEsconder('conteudo2')" class="bg-gray-100 hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-        O que é a internet? O que compõe?
-        </button>
-        <div id="conteudo2" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>A internet é uma rede mundial que conecta milhões de dispositivos para permitir comunicação e troca de informações. Ela é composta por infraestrutura física (como cabos, servidores e satélites), pelos dispositivos conectados, pelos protocolos que organizam a comunicação (como TCP/IP e HTTP) e pelos serviços utilizados, como sites, e-mails, redes sociais e streaming.</p>
-        </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card2')">
+              <h2 class="text-xl font-bold text-gray-800">O que é a internet? O que compõe?</h2>
+              <i id="icon2" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+          </div>
+          <div id="card2" class="max-h-0 overflow-hidden transition-all">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>A internet é uma rede mundial que conecta milhões de dispositivos para permitir comunicação e troca de informações. Ela é composta por infraestrutura física (como cabos, servidores e satélites), pelos dispositivos conectados, pelos protocolos que organizam a comunicação (como TCP/IP e HTTP) e pelos serviços utilizados, como sites, e-mails, redes sociais e streaming.</p>
+              </div>
+          </div>
       </div>
 
-      <div>
-        <button onclick="MostrarEsconder('conteudo3')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-       O que é web?
-        </button>
-        <div id="conteudo3" class="hidden bg-gray-100 text-gray-900 max-w-3xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>A Web (World Wide Web) é um sistema de páginas e conteúdos acessados pela internet por meio de navegadores. Ela funciona através de links, sites e documentos que usam linguagens como HTML, CSS e JavaScript. A Web é apenas uma parte da internet — outros serviços, como e-mail e FTP, também fazem parte da internet, mas não da Web.</p>
-        </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card3')">
+              <h2 class="text-xl font-bold text-gray-800">O que é web?</h2>
+              <i id="icon3" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+          </div>
+          <div id="card3" class="max-h-0 overflow-hidden transition-all">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>A Web (World Wide Web) é um sistema de páginas e conteúdos acessados pela internet por meio de navegadores. Ela funciona através de links, sites e documentos que usam linguagens como HTML, CSS e JavaScript. A Web é apenas uma parte da internet — outros serviços, como e-mail e FTP, também fazem parte da internet, mas não da Web.</p>
+              </div>
+          </div>
       </div>
-     
-        <button onclick="MostrarEsconder('conteudo4')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-          O que é o mapa de fibra óptica. Mostre o mapa global de fibra óptica da internet. Quais os componentes de hardware de uma rede wi-fi?
-        </button>
-        <div id="conteudo4" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>O mapa de fibra óptica mostra as rotas dos cabos submarinos e terrestres que conectam países e continentes, formando a infraestrutura física da internet. Esses cabos transportam quase todo o tráfego mundial de dados e revelam onde estão os pontos de conexão globais. Componentes de uma rede Wi-Fi: modem (recebe o sinal do provedor), roteador Wi-Fi (distribui o sinal sem fio), access point (amplia a cobertura), switch (opcional, conecta dispositivos por cabo), antenas (transmitem e recebem o sinal), placas de rede Wi-Fi dos dispositivos e repetidores (reforçam o alcance).</p>
-      </div>
-        <button onclick="MostrarEsconder('conteudo5')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-         Quais os componentes de hardware de uma rede local com cabo de redel?
-        </button>
-        <div id="conteudo5" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Componentes de hardware de uma rede local com cabo de rede: Uma rede local cabeada é formada por equipamentos que permitem a comunicação por meio de cabos Ethernet. Seus principais componentes são: modem (recebe o sinal do provedor), roteador (distribui a rede e cria sub-redes), switch (interliga vários dispositivos por cabo), cabos de rede Ethernet, conectores RJ-45, patch panel (opcional, organiza os cabos), tomadas de rede, placas de rede (NIC) nos computadores e servidores ou dispositivos finais que utilizam a conexão.</p>
-        </div>
-        <button onclick="MostrarEsconder('conteudo6')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-          O que é um protocolo de comunicação?
-        </button>
-        <div id="conteudo6" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Um protocolo de comunicação é um conjunto de regras que define como dois ou mais dispositivos trocam informações em uma rede. Ele organiza como os dados são enviados, recebidos, interpretados e confirmados, garantindo que todos os equipamentos se comuniquem de forma correta e segura. Exemplos incluem TCP/IP, HTTP, HTTPS e FTP.</p>
-        </div>
-        <button onclick="MostrarEsconder('conteudo7')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-          O que é o modelo OSI? E o modelo TCP/IP?
-        </button>
-        <div id="conteudo7" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>O modelo OSI é um padrão teórico que divide a comunicação em redes em 7 camadas (Física, Enlace, Rede, Transporte, Sessão, Apresentação e Aplicação). Ele organiza as funções da comunicação para facilitar o entendimento, o estudo e o desenvolvimento de tecnologias de rede. O modelo TCP/IP é um modelo prático utilizado na internet, composto por 4 camadas (Acesso à Rede, Internet, Transporte e Aplicação). Ele descreve como os dados são enviados e recebidos entre dispositivos reais, sendo a base de funcionamento da rede mundial.</p>
-        </div>
-        <button onclick="MostrarEsconder('conteudo8')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-         O que é o protocolo IP V4 ? e o IP V6?
-        </button>
-        <div id="conteudo8" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>O protocolo IPv4 é a versão mais antiga e ainda mais utilizada para identificar dispositivos em uma rede. Ele usa endereços numéricos de 32 bits, como 192.168.0.1, permitindo cerca de 4 bilhões de endereços. Por causa do crescimento da internet, esse espaço tornou-se limitado. O protocolo IPv6 é a versão mais nova, criada para substituir o IPv4. Ele usa endereços de 128 bits, como 2001:0db8:85a3::8a2e:0370:7334, oferecendo uma quantidade praticamente ilimitada de endereços, além de melhorias em segurança e desempenho.</p>
-        </div>
-        <button onclick="MostrarEsconder('conteudo9')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-         O que é o protocolo HTTP? E o HTTPS ? 
-        </button>
-        <div id="conteudo9" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p> O protocolo HTTP é um conjunto de regras usado para transmitir páginas e informações entre navegadores e servidores na Web. Ele permite acessar sites, porém não criptografa os dados enviados. O protocolo HTTPS é a versão segura do HTTP. Ele utiliza criptografia para proteger as informações durante a comunicação, garantindo mais segurança e privacidade ao acessar sites, especialmente aqueles que envolvem senhas e dados sensíveis.</p>
-        </div>
-        <button onclick="MostrarEsconder('conteudo10')" class="bg-gray-100 max-w-3xl hover:bg-gray-300 px-16 py-5 rounded-2xl text-2xl font-bold text-gray-900 transition-all duration-300">
-         exemplo de um framework para programação do protocolo HTTP com uso do node.js? 
-        </button>
-        <div id="conteudo10" class="hidden bg-gray-100 text-gray-900 max-w-2xl rounded-2xl p-6 mt-2 border border-gray-300">
-          <p>Um exemplo de framework para programar usando o protocolo HTTP com Node.js é o Express.js. Ele facilita a criação de servidores web, rotas HTTP, APIs e sistemas completos, tornando o desenvolvimento mais rápido e organizado.</p>
-        </div>
-   
 
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card4')">
+              <h2 class="text-xl font-bold text-gray-800">O que é o mapa de fibra óptica? Mostre o mapa global de fibra óptica da internet. Quais os componentes de hardware de uma rede wi-fi?</h2>
+              <i id="icon4" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+          </div>
+          <div id="card4" class="max-h-0 overflow-hidden transition-all">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>O mapa de fibra óptica mostra as rotas dos cabos submarinos e terrestres que conectam países e continentes, formando a infraestrutura física da internet. Esses cabos transportam quase todo o tráfego mundial de dados e revelam onde estão os pontos de conexão globais. Componentes de uma rede Wi-Fi: modem (recebe o sinal do provedor), roteador Wi-Fi (distribui o sinal sem fio), access point (amplia a cobertura), switch (opcional, conecta dispositivos por cabo), antenas (transmitem e recebem o sinal), placas de rede Wi-Fi dos dispositivos e repetidores (reforçam o alcance).</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card5')">
+              <h2 class="text-xl font-bold text-gray-800">Quais os componentes de hardware de uma rede local com cabo de rede?</h2>
+              <i id="icon5" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+          </div>
+          <div id="card5" class="max-h-0 overflow-hidden transition-all">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>Componentes de hardware de uma rede local com cabo de rede: Uma rede local cabeada é formada por equipamentos que permitem a comunicação por meio de cabos Ethernet. Seus principais componentes são: modem (recebe o sinal do provedor), roteador (distribui a rede e cria sub-redes), switch (interliga vários dispositivos por cabo), cabos de rede Ethernet, conectores RJ-45, patch panel (opcional, organiza os cabos), tomadas de rede, placas de rede (NIC) nos computadores e servidores ou dispositivos finais que utilizam a conexão.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card6')">
+              <h2 class="text-xl font-bold text-gray-800">O que é um protocolo de comunicação?</h2>
+              <i id="icon6" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+          </div>
+          <div id="card6" class="max-h-0 overflow-hidden transition-all">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>Um protocolo de comunicação é um conjunto de regras que define como dois ou mais dispositivos trocam informações em uma rede. Ele organiza como os dados são enviados, recebidos, interpretados e confirmados, garantindo que todos os equipamentos se comuniquem de forma correta e segura. Exemplos incluem TCP/IP, HTTP, HTTPS e FTP.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card7')">
+              <h2 class="text-xl font-bold text-gray-800">O que é o modelo OSI? E o modelo TCP/IP?</h2>
+              <i id="icon7" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+          </div>
+          <div id="card7" class="max-h-0 overflow-hidden transition-all">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>O modelo OSI é um padrão teórico que divide a comunicação em redes em 7 camadas (Física, Enlace, Rede, Transporte, Sessão, Apresentação e Aplicação). Ele organiza as funções da comunicação para facilitar o entendimento, o estudo e o desenvolvimento de tecnologias de rede. O modelo TCP/IP é um modelo prático utilizado na internet, composto por 4 camadas (Acesso à Rede, Internet, Transporte e Aplicação). Ele descreve como os dados são enviados e recebidos entre dispositivos reais, sendo a base de funcionamento da rede mundial.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card8')">
+              <h2 class="text-xl font-bold text-gray-800">O que é o protocolo IP V4? E o IP V6?</h2>
+              <i id="icon8" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+          </div>
+          <div id="card8" class="max-h-0 overflow-hidden transition-all">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>O protocolo IPv4 é a versão mais antiga e ainda mais utilizada para identificar dispositivos em uma rede. Ele usa endereços numéricos de 32 bits, como 192.168.0.1, permitindo cerca de 4 bilhões de endereços. Por causa do crescimento da internet, esse espaço tornou-se limitado. O protocolo IPv6 é a versão mais nova, criada para substituir o IPv4. Ele usa endereços de 128 bits, como 2001:0db8:85a3::8a2e:0370:7334, oferecendo uma quantidade praticamente ilimitada de endereços, além de melhorias em segurança e desempenho.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card9')">
+              <h2 class="text-xl font-bold text-gray-800">O que é o protocolo HTTP? E o HTTPS?</h2>
+              <i id="icon9" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+          </div>
+          <div id="card9" class="max-h-0 overflow-hidden transition-all">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>O protocolo HTTP é um conjunto de regras usado para transmitir páginas e informações entre navegadores e servidores na Web. Ele permite acessar sites, porém não criptografa os dados enviados. O protocolo HTTPS é a versão segura do HTTP. Ele utiliza criptografia para proteger as informações durante a comunicação, garantindo mais segurança e privacidade ao acessar sites, especialmente aqueles que envolvem senhas e dados sensíveis.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="bg-white rounded-xl shadow-md">
+          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card10')">
+              <h2 class="text-xl font-bold text-gray-800">Exemplo de um framework para programação do protocolo HTTP com uso do node.js?</h2>
+              <i id="icon10" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+          </div>
+          <div id="card10" class="max-h-0 overflow-hidden transition-all">
+              <div class="px-6 pb-6 text-gray-600">
+                  <p>Um exemplo de framework para programar usando o protocolo HTTP com Node.js é o Express.js. Ele facilita a criação de servidores web, rotas HTTP, APIs e sistemas completos, tornando o desenvolvimento mais rápido e organizado.</p>
+              </div>
+          </div>
+      </div>
   </div>
+</div>
 </section>
 
 <div class="w-full h-[2px] bg-white"></div>

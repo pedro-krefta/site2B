@@ -49,7 +49,7 @@ function gerarArr(min, max, qtde) {
   }
 }
 
-function principal() {
+function gerarPrincipal() {
   
   res2.innerHTML = ""
   
