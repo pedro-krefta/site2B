@@ -47,60 +47,86 @@
   <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
 
   
-    <div class="flex flex-col items-start space-y-8">
-
-      <div class="space-y-6">
-        <div class="bg-white rounded-xl shadow-md">
-            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card1')">
-                <h2 class="text-xl font-bold text-gray-800">O que são Linguagens de Programação? Fale sobre as seguintes linguagens: C++, Javascript, Java, Python, PHP.</h2>
-                <i id="icon1" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-            </div>
-            <div id="card1" class="max-h-0 overflow-hidden transition-all">
-                <div class="px-6 pb-6 text-gray-600">
-                    <p>Linguagens de programação são sistemas formais com regras e símbolos para criar softwares, atuando como uma ponte entre humanos e computadores. As linguagens apresentadas são: C++, usada para sistemas de alta performance e jogos, sendo uma linguagem orientada a objetos; JavaScript, essencial para desenvolvimento web front-end e back-end; Java, conhecida pela sua portabilidade ("escreva uma vez, execute em qualquer lugar") e robustez; Python, elogiada pela sintaxe clara e facilidade de aprendizado, usada em diversas áreas como ciência de dados e web; e PHP, voltada principalmente para o desenvolvimento web no lado do servidor.</p>
+     <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-2 text-blue-400">Linguagens de Programação</h1>
+        <p class="text-center text-gray-400 mb-10">Conceitos fundamentais sobre desenvolvimento de software</p>
+        
+        <div class="space-y-6">
+    
+            <div class="card bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-800">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="language-icon w-12 h-12 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-code text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que são Linguagens de Programação? Fale sobre as seguintes linguagens: C++, Javascript, Java, Python, PHP.</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <p class="mb-4">Linguagens de programação são sistemas formais com regras e símbolos para criar softwares, atuando como uma ponte entre humanos e computadores.</p>
+                    <p class="mb-3"><strong class="text-blue-400">C++:</strong> Usada para sistemas de alta performance e jogos, sendo uma linguagem orientada a objetos.</p>
+                    <p class="mb-3"><strong class="text-yellow-400">JavaScript:</strong> Essencial para desenvolvimento web front-end e back-end.</p>
+                    <p class="mb-3"><strong class="text-red-400">Java:</strong> Conhecida pela sua portabilidade ("escreva uma vez, execute em qualquer lugar") e robustez.</p>
+                    <p class="mb-3"><strong class="text-green-400">Python:</strong> Elogiada pela sintaxe clara e facilidade de aprendizado, usada em diversas áreas como ciência de dados e web.</p>
+                    <p><strong class="text-purple-400">PHP:</strong> Voltada principalmente para o desenvolvimento web no lado do servidor.</p>
                 </div>
             </div>
-        </div>
 
-        <div class="bg-white rounded-xl shadow-md">
-            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card2')">
-                <h2 class="text-xl font-bold text-gray-800">O que é uma linguagem de programação interpretada? E uma linguagem de programação compilada?</h2>
-                <i id="icon2" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-            </div>
-            <div id="card2" class="max-h-0 overflow-hidden transition-all">
-                <div class="px-6 pb-6 text-gray-600">
-                    <p>Uma linguagem compilada traduz o código-fonte inteiro para código de máquina antes da execução, gerando um arquivo executável que roda diretamente no processador. Já uma linguagem interpretada executa o código linha por linha em tempo real através de um interpretador, que faz a tradução durante a execução. Linguagens compiladas tendem a ser mais rápidas e eficientes, enquanto as interpretadas oferecem maior portabilidade e flexibilidade.</p>
+            <div class="card bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-800">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="compiled-icon w-12 h-12 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-cogs text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que é uma linguagem de programação interpretada? E uma linguagem de programação compilada?</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <p class="mb-4"><strong class="text-green-400">Linguagem Compilada:</strong> Traduz o código-fonte inteiro para código de máquina antes da execução, gerando um arquivo executável que roda diretamente no processador.</p>
+                    <p class="mb-4"><strong class="text-blue-400">Linguagem Interpretada:</strong> Executa o código linha por linha em tempo real através de um interpretador, que faz a tradução durante a execução.</p>
+                    <p><strong class="text-yellow-400">Diferenças:</strong> Linguagens compiladas tendem a ser mais rápidas e eficientes, enquanto as interpretadas oferecem maior portabilidade e flexibilidade.</p>
                 </div>
             </div>
-        </div>
 
         
-        <div class="bg-white rounded-xl shadow-md">
-            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card3')">
-                <h2 class="text-xl font-bold text-gray-800">O que é HTML e CSS</h2>
-                <i id="icon3" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-            </div>
-            <div id="card3" class="max-h-0 overflow-hidden transition-all">
-                <div class="px-6 pb-6 text-gray-600">
-                    <p>HTML e CSS são linguagens usadas para construir páginas web: HTML (HyperText Markup Language) é a estrutura (o esqueleto) que define o conteúdo, como títulos, parágrafos e imagens. CSS (Cascading Style Sheets) é a linguagem de estilo que cuida da aparência visual, definindo cores, fontes, layout e espaçamento. Juntas, elas formam a base do desenvolvimento web front-end, que é a parte com a qual o usuário interage diretamente.</p>
+            <div class="card bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-800">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="web-icon w-12 h-12 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-html5 text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que é HTML e CSS</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <p class="mb-4">HTML e CSS são linguagens usadas para construir páginas web:</p>
+                    <p class="mb-3"><strong class="text-orange-400">HTML (HyperText Markup Language):</strong> É a estrutura (o esqueleto) que define o conteúdo, como títulos, parágrafos e imagens.</p>
+                    <p class="mb-3"><strong class="text-blue-400">CSS (Cascading Style Sheets):</strong> É a linguagem de estilo que cuida da aparência visual, definindo cores, fontes, layout e espaçamento.</p>
+                    <p>Juntas, elas formam a base do desenvolvimento web front-end, que é a parte com a qual o usuário interage diretamente.</p>
                 </div>
             </div>
-        </div>
 
-        
-        <div class="bg-white rounded-xl shadow-md">
-            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card4')">
-                <h2 class="text-xl font-bold text-gray-800">O que é uma IDE (ambiente de desenvolvimento de sistemas - exemplos: VSCode, IntelliJ, ...)</h2>
-                <i id="icon4" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-            </div>
-            <div id="card4" class="max-h-0 overflow-hidden transition-all">
-                <div class="px-6 pb-6 text-gray-600">
-                    <p>Uma IDE (Ambiente de Desenvolvimento Integrado) é um software que combina ferramentas para facilitar a escrita, compilação, teste e depuração de código em um único ambiente. Exemplos comuns incluem o VS Code (que pode funcionar como um IDE com plugins) e o IntelliJ IDEA, que são projetados para aumentar a produtividade do desenvolvedor com recursos como auto-complete, destaques de sintaxe e gerenciamento de versão.</p>
+            <div class="card bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-800">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="ide-icon w-12 h-12 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-laptop-code text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que é uma IDE (ambiente de desenvolvimento de sistemas - exemplos: VSCode, IntelliJ, ...)</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <p class="mb-4">Uma IDE (Ambiente de Desenvolvimento Integrado) é um software que combina ferramentas para facilitar a escrita, compilação, teste e depuração de código em um único ambiente.</p>
+                    <p class="mb-3"><strong class="text-blue-400">Exemplos comuns:</strong></p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li><strong>VS Code:</strong> Que pode funcionar como um IDE com plugins</li>
+                        <li><strong>IntelliJ IDEA:</strong> Projetado para aumentar a produtividade do desenvolvedor</li>
+                    </ul>
+                    <p class="mt-4">As IDEs incluem recursos como auto-complete, destaques de sintaxe e gerenciamento de versão para melhorar a eficiência do desenvolvimento.</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <div class="flex justify-center items-start w-full lg:w-auto">
       <img src="./imagens/js.logo.png"  class=" rounded-2xl w-[400px] h-[400px] object-contain">

@@ -49,70 +49,180 @@
    <div class="w-full h-[2px] bg-white"></div>
 
 <section id="perguntas" class="min-h-screen">
-  <h1 class="text-white text-5xl text-center font-bold mt-10">perguntas</h1>
+   <h1 class="text-white text-5xl text-center font-bold mt-10">Perguntas</h1>
 
-  <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
-
-  
-    <div class="flex flex-row space-x-10 items-start mt-10">
-
-     
-      <div class="space-y-6">
-        <div class="bg-white rounded-xl shadow-md">
-            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card1')">
-                <h2 class="text-xl font-bold text-gray-800">Arduíno: O que é, Para que serve / aplicações, vantagens e desvantagens. Como o Arduíno funciona? O que é eletrônica embarcada?</h2>
-                <i id="icon1" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-            </div>
-            <div id="card1" class="max-h-0 overflow-hidden transition-all">
-                <div class="px-6 pb-6 text-gray-600">
-                    <p>O Arduino é uma plataforma de prototipagem eletrônica de código aberto baseada em hardware e software flexíveis e fáceis de usar. É destinado a artistas, designers, hobbistas e qualquer pessoa interessada em criar objetos ou ambientes interativos.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-white rounded-xl shadow-md">
-            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card2')">
-                <h2 class="text-xl font-bold text-gray-800">Arduíno: qual a linguagem de programação usada</h2>
-                <i id="icon2" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-            </div>
-            <div id="card2" class="max-h-0 overflow-hidden transition-all">
-                <div class="px-6 pb-6 text-gray-600">
-                    <p>A linguagem de programação principal usada no Arduino é baseada em C/C++, com algumas simplificações e bibliotecas específicas para facilitar o uso com os microcontroladores da plataforma.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-white rounded-xl shadow-md">
-            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card3')">
-                <h2 class="text-xl font-bold text-gray-800">O que são entradas e saídas digitais em circuitos integrados</h2>
-                <i id="icon3" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-            </div>
-            <div id="card3" class="max-h-0 overflow-hidden transition-all">
-                <div class="px-6 pb-6 text-gray-600">
-                    <p>Entradas e saídas digitais (E/S digitais) em circuitos como o Arduino são pinos que podem ler ou escrever sinais digitais, ou seja, que possuem apenas dois estados: HIGH (5V) ou LOW (0V).</p>
-                </div>
-            </div>
-        </div>
-
-     
-        <div class="bg-white rounded-xl shadow-md">
-            <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card4')">
-                <h2 class="text-xl font-bold text-gray-800">O que é um diodo? LED? Display 7 segmentos?</h2>
-                <i id="icon4" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-            </div>
-            <div id="card4" class="max-h-0 overflow-hidden transition-all">
-                <div class="px-6 pb-6 text-gray-600">
-                    <p>Um diodo é um componente eletrônico que permite a passagem de corrente elétrica em apenas um sentido. O LED (Diodo Emissor de Luz) é um tipo especial de diodo que emite luz quando energizado. O display de 7 segmentos é um componente que usa 7 LEDs organizados para formar números e letras.</p>
-                    
-
-                    <div class="bg-gray-50 rounded-lg mt-4">
-                        <div class="flex justify-between items-center p-4 cursor-pointer" onclick="toggleCard('card5')">
-                            <h3 class="text-lg font-semibold text-gray-800">Componentes Eletrônicos empregados em serviços</h3>
-                            <i id="icon5" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
+    <div class="flex flex-col lg:flex-row justify-between items-start px-5 lg:px-20 mt-16 gap-10">
+        
+        <!-- Coluna de Cards -->
+        <div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-10 items-start w-full">
+            
+            <!-- Coluna 1 -->
+            <div class="space-y-6 w-full lg:w-1/2">
+                
+                <!-- Card 1 - Arduino -->
+                <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                    <div class="flex justify-between items-center p-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700">
+                                <i class="fas fa-microchip text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-xl font-bold text-white">Arduíno: O que é, Para que serve / aplicações, vantagens e desvantagens. Como o Arduíno funciona? O que é eletrônica embarcada?</h2>
                         </div>
-                        <div id="card5" class="max-h-0 overflow-hidden transition-all">
-                            <div class="px-4 pb-4 text-gray-600">
-                                <p>Os principais componentes eletrônicos usados em serviços incluem resistores, capacitores, transistores, diodos, LEDs, microcontroladores, sensores diversos e displays, cada um com funções específicas nos circuitos eletrônicos.</p>
+                    </div>
+                    <div class="px-6 pb-6 text-gray-300">
+                        <p class="mb-4">O Arduino é uma plataforma de prototipagem eletrônica de código aberto baseada em hardware e software flexíveis e fáceis de usar. É destinado a artistas, designers, hobbistas e qualquer pessoa interessada em criar objetos ou ambientes interativos.</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mt-4">
+                            <div class="bg-gray-800 p-4 rounded-lg">
+                                <h3 class="text-green-400 font-semibold mb-2">Vantagens</h3>
+                                <ul class="list-disc list-inside space-y-1 text-sm">
+                                    <li>Código aberto e acessível</li>
+                                    <li>Fácil de usar para iniciantes</li>
+                                    <li>Grande comunidade de suporte</li>
+                                    <li>Baixo custo</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg">
+                                <h3 class="text-red-400 font-semibold mb-2">Desvantagens</h3>
+                                <ul class="list-disc list-inside space-y-1 text-sm">
+                                    <li>Recursos limitados</li>
+                                    <li>Velocidade de processamento menor</li>
+                                    <li>Memória restrita</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-800 p-4 rounded-lg mt-4">
+                            <h3 class="text-yellow-400 font-semibold mb-2">Eletrônica Embarcada</h3>
+                            <p>Sistemas eletrônicos integrados em dispositivos maiores para funções específicas, como controle, monitoramento ou automação.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 - Linguagem Arduino -->
+                <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                    <div class="flex justify-between items-center p-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700">
+                                <i class="fas fa-code text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-xl font-bold text-white">Arduíno: qual a linguagem de programação usada</h2>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 text-gray-300">
+                        <p class="mb-4">A linguagem de programação principal usada no Arduino é baseada em C/C++, com algumas simplificações e bibliotecas específicas para facilitar o uso com os microcontroladores da plataforma.</p>
+                        
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-green-400 font-semibold mb-2">Características da Linguagem</h3>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Baseada em C/C++ com sintaxe simplificada</li>
+                                <li>Bibliotecas específicas para hardware Arduino</li>
+                                <li>Funções pré-definidas como <code class="text-yellow-400">setup()</code> e <code class="text-yellow-400">loop()</code></li>
+                                <li>IDE integrada para desenvolvimento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna 2 -->
+            <div class="space-y-6 w-full lg:w-1/2">
+                
+                <!-- Card 3 - Entradas e Saídas Digitais -->
+                <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                    <div class="flex justify-between items-center p-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-purple-500 to-purple-700">
+                                <i class="fas fa-bolt text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-xl font-bold text-white">O que são entradas e saídas digitais em circuitos integrados</h2>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 text-gray-300">
+                        <p class="mb-4">Entradas e saídas digitais (E/S digitais) em circuitos como o Arduino são pinos que podem ler ou escrever sinais digitais, ou seja, que possuem apenas dois estados: HIGH (5V) ou LOW (0V).</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-gray-800 p-4 rounded-lg">
+                                <h3 class="text-blue-400 font-semibold mb-2">Entradas Digitais</h3>
+                                <ul class="list-disc list-inside space-y-1 text-sm">
+                                    <li>Leem sinais de sensores</li>
+                                    <li>Detectam botões pressionados</li>
+                                    <li>Reconhecem estados ON/OFF</li>
+                                    <li>Exemplo: <code class="text-green-400">digitalRead()</code></li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-800 p-4 rounded-lg">
+                                <h3 class="text-yellow-400 font-semibold mb-2">Saídas Digitais</h3>
+                                <ul class="list-disc list-inside space-y-1 text-sm">
+                                    <li>Controlam LEDs</li>
+                                    <li>Acionam relés</li>
+                                    <li>Ativam motores</li>
+                                    <li>Exemplo: <code class="text-green-400">digitalWrite()</code></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 - Diodos, LEDs e Display -->
+                <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                    <div class="flex justify-between items-center p-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-red-500 to-red-700">
+                                <i class="fas fa-lightbulb text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-xl font-bold text-white">O que é um diodo? LED? Display 7 segmentos?</h2>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 text-gray-300">
+                        <div class="space-y-4">
+                            <div class="bg-gray-800 p-4 rounded-lg">
+                                <h3 class="text-orange-400 font-semibold mb-2">Diodo</h3>
+                                <p>Componente eletrônico que permite a passagem de corrente elétrica em apenas um sentido, funcionando como uma "válvula" elétrica.</p>
+                            </div>
+                            
+                            <div class="bg-gray-800 p-4 rounded-lg">
+                                <h3 class="text-yellow-400 font-semibold mb-2">LED (Diodo Emissor de Luz)</h3>
+                                <p>Tipo especial de diodo que emite luz quando energizado, amplamente usado para indicação visual e iluminação.</p>
+                            </div>
+                            
+                            <div class="bg-gray-800 p-4 rounded-lg">
+                                <h3 class="text-green-400 font-semibold mb-2">Display de 7 Segmentos</h3>
+                                <p>Componente que usa 7 LEDs organizados para formar números e letras, muito utilizado em mostradores digitais.</p>
+                            </div>
+
+                            <!-- Sub-card - Componentes Eletrônicos -->
+                            <div class="bg-gray-700 rounded-lg mt-4 border border-gray-600">
+                                <div class="p-4">
+                                    <h3 class="text-blue-400 font-semibold mb-3 text-lg">Componentes Eletrônicos empregados em serviços</h3>
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-resistor text-red-400"></i>
+                                            <span class="text-sm">Resistores</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-capacitor text-yellow-400"></i>
+                                            <span class="text-sm">Capacitores</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-transistor text-green-400"></i>
+                                            <span class="text-sm">Transistores</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-microchip text-blue-400"></i>
+                                            <span class="text-sm">Microcontroladores</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-sensor text-purple-400"></i>
+                                            <span class="text-sm">Sensores</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-display text-orange-400"></i>
+                                            <span class="text-sm">Displays</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-300 text-sm mt-3">Cada componente possui funções específicas nos circuitos eletrônicos para diferentes aplicações.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -120,7 +230,6 @@
             </div>
         </div>
     </div>
-</div>
     
   
       <div class="flex flex-col items-center space-y-6 ">
@@ -320,8 +429,28 @@ console.log('Servidor rodando na porta 3000');
         </code>
     </pre>
 </div>
-<div class=" flex justify-center items-center ">
-  <img class="mt-20  rounded-2xl" src="./imagens/c++.jpeg">
+<div class="flex justify-center items-center gap-8 p-8">
+    
+    <div class="text-center">
+        <img class="rounded-2xl shadow-lg w-80" src="./imagens/c++.jpeg" alt="Imagem C++">
+        <p class="text-white mt-2 text-sm">Imagem C++</p>
+    </div>
+
+    <div class="text-center">
+        <video class="rounded-2xl shadow-lg w-80" controls>
+            <source src="./imagens/video_eletronica.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <p class="text-white mt-2 text-sm">Vídeo Eletrônica 1</p>
+    </div>
+    
+    <div class="text-center">
+        <video class="rounded-2xl shadow-lg w-80" controls>
+            <source src="./imagens/video_eletronica2.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <p class="text-white mt-2 text-sm">Vídeo Eletrônica 2</p>
+    </div>
 </div>
 </section>
 

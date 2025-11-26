@@ -41,69 +41,154 @@
    <div class="w-full h-[2px] bg-white"></div>
 
 <section class="min-h-screen">
-  <h1 class="text-white text-5xl text-center font-bold mt-10">perguntas</h1>
+    <!-- Cabeçalho -->
+    <h1 class="text-white text-5xl text-center font-bold mt-10">Perguntas</h1>
 
-  <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
+    <div class="flex flex-col lg:flex-row justify-between items-start px-5 lg:px-20 mt-16 gap-10">
+        
+        <!-- Coluna de Cards -->
+        <div class="space-y-6 w-full">
+            
+            <!-- Card 1 - Hardware -->
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700">
+                            <i class="fas fa-microchip text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que é o Hardware de computadores? O que é placa mãe? Processador? e memória principal (RAM)?</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <p class="mb-4">Hardware de computador são os componentes físicos e tangíveis, como a placa-mãe, o processador e a memória RAM, que formam a estrutura física de um dispositivo eletrônico.</p>
+                    <div class="grid md:grid-cols-2 gap-4 mt-4">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-blue-400 font-semibold mb-2">Placa-mãe</h3>
+                            <p>É o circuito central que conecta todos os outros componentes, permitindo que eles se comuniquem.</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-green-400 font-semibold mb-2">Processador (CPU)</h3>
+                            <p>É o "cérebro" do computador, responsável por executar as instruções e processar os dados.</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg md:col-span-2">
+                            <h3 class="text-yellow-400 font-semibold mb-2">Memória RAM</h3>
+                            <p>É uma memória de curto prazo que armazena temporariamente os dados que o computador está usando no momento, sendo apagados quando o dispositivo é desligado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  
-    <div class="space-y-6">
-   
-      <div class="bg-white rounded-xl shadow-md">
-          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card1')">
-              <h2 class="text-xl font-bold text-gray-800">O que é o Hardware de computadores? O que é placa mãe? Processador? e memória principal (RAM)?</h2>
-              <i id="icon1" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-          </div>
-          <div id="card1" class="max-h-0 overflow-hidden transition-all">
-              <div class="px-6 pb-6 text-gray-600">
-                  <p>Hardware de computador são os componentes físicos e tangíveis, como a placa-mãe, o processador e a memória RAM, que formam a estrutura física de um dispositivo eletrônico. A placa-mãe é o circuito central que conecta todos os outros componentes, permitindo que eles se comuniquem. O processador (CPU) é o "cérebro" do computador, responsável por executar as instruções e processar os dados. A memória RAM é uma memória de curto prazo que armazena temporariamente os dados que o computador está usando no momento, sendo apagados quando o dispositivo é desligado.</p>
-              </div>
-          </div>
-      </div>
+            <!-- Card 2 - Sistema Operacional -->
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700">
+                            <i class="fas fa-desktop text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que é um sistema operacional? Cite 4 exemplos diferentes?</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <p class="mb-4">Um sistema operacional (SO) é um software fundamental que age como intermediário entre o hardware do computador e os outros programas e usuários, gerenciando os recursos do sistema e permitindo a comunicação entre eles.</p>
+                    <p class="mb-4">Ele fornece a plataforma para que outros softwares possam ser executados e para que o usuário interaja com o dispositivo.</p>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <h3 class="text-green-400 font-semibold mb-3">Exemplos de Sistemas Operacionais:</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div class="text-center p-2 bg-gray-700 rounded">
+                                <i class="fab fa-windows text-blue-400 text-xl mb-1"></i>
+                                <p class="text-sm">Windows</p>
+                            </div>
+                            <div class="text-center p-2 bg-gray-700 rounded">
+                                <i class="fab fa-apple text-gray-300 text-xl mb-1"></i>
+                                <p class="text-sm">macOS</p>
+                            </div>
+                            <div class="text-center p-2 bg-gray-700 rounded">
+                                <i class="fab fa-linux text-yellow-400 text-xl mb-1"></i>
+                                <p class="text-sm">Linux</p>
+                            </div>
+                            <div class="text-center p-2 bg-gray-700 rounded">
+                                <i class="fab fa-android text-green-400 text-xl mb-1"></i>
+                                <p class="text-sm">Android</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-   
-      <div class="bg-white rounded-xl shadow-md">
-          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card2')">
-              <h2 class="text-xl font-bold text-gray-800">O que é um sistema operacional? Cite 4 exemplos diferentes?</h2>
-              <i id="icon2" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-          </div>
-          <div id="card2" class="max-h-0 overflow-hidden transition-all">
-              <div class="px-6 pb-6 text-gray-600">
-                  <p>Um sistema operacional (SO) é um software fundamental que age como intermediário entre o hardware do computador e os outros programas e usuários, gerenciando os recursos do sistema e permitindo a comunicação entre eles. Ele fornece a plataforma para que outros softwares possam ser executados e para que o usuário interaja com o dispositivo. Exemplos de sistemas operacionais incluem o Windows, macOS, Linux e Android.</p>
-              </div>
-          </div>
-      </div>
+            <!-- Card 3 - Sistema de Arquivos -->
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-purple-500 to-purple-700">
+                            <i class="fas fa-folder text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que é o sistema de arquivos? Como funciona em modo texto (cmd) e modo gráfico (explorer)?</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <p class="mb-4">Um sistema de arquivos é a estrutura de regras que organiza e gerencia como os dados são armazenados, nomeados e acessados em um dispositivo de armazenamento, como um disco rígido.</p>
+                    <div class="grid md:grid-cols-2 gap-4 mt-4">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-yellow-400 font-semibold mb-2">Modo Texto (CMD)</h3>
+                            <p class="mb-2">A interação ocorre por meio de comandos digitados no prompt de comando:</p>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li><code class="text-green-400">dir</code> - listar arquivos</li>
+                                <li><code class="text-green-400">cd</code> - mudar de diretório</li>
+                                <li><code class="text-green-400">mkdir</code> - criar pasta</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-blue-400 font-semibold mb-2">Modo Gráfico (Explorer)</h3>
+                            <p>Interação visual e intuitiva através de ícones e janelas, onde se pode:</p>
+                            <ul class="list-disc list-inside space-y-1 text-sm mt-2">
+                                <li>Clicar para abrir arquivos</li>
+                                <li>Copiar e colar</li>
+                                <li>Arrastar e soltar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 - Software de Escritório -->
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-red-500 to-red-700">
+                            <i class="fas fa-file-alt text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que é software de escritório?</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <p class="mb-4">Software de escritório, também conhecido como software de produtividade, é um conjunto de programas que auxiliam nas tarefas do dia a dia de um escritório, como a criação de documentos, planilhas e apresentações.</p>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <h3 class="text-red-400 font-semibold mb-3">Exemplos comuns:</h3>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="text-center p-3 bg-gray-700 rounded">
+                                <i class="fas fa-file-word text-blue-400 text-2xl mb-2"></i>
+                                <h4 class="font-semibold text-white">Microsoft Word</h4>
+                                <p class="text-sm text-gray-300">Editor de texto</p>
+                            </div>
+                            <div class="text-center p-3 bg-gray-700 rounded">
+                                <i class="fas fa-file-excel text-green-400 text-2xl mb-2"></i>
+                                <h4 class="font-semibold text-white">Microsoft Excel</h4>
+                                <p class="text-sm text-gray-300">Planilha eletrônica</p>
+                            </div>
+                            <div class="text-center p-3 bg-gray-700 rounded">
+                                <i class="fas fa-file-powerpoint text-orange-400 text-2xl mb-2"></i>
+                                <h4 class="font-semibold text-white">Microsoft PowerPoint</h4>
+                                <p class="text-sm text-gray-300">Editor de apresentações</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     
-      <div class="bg-white rounded-xl shadow-md">
-          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card3')">
-              <h2 class="text-xl font-bold text-gray-800">O que é o sistema de arquivos? Como funciona em modo texto (cmd) e modo gráfico (explorer)?</h2>
-              <i id="icon3" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-          </div>
-          <div id="card3" class="max-h-0 overflow-hidden transition-all">
-              <div class="px-6 pb-6 text-gray-600">
-                  <p>Um sistema de arquivos é a estrutura de regras que organiza e gerencia como os dados são armazenados, nomeados e acessados em um dispositivo de armazenamento, como um disco rígido. No modo texto, a interação ocorre por meio de comandos digitados no prompt de comando (cmd), como dir para listar arquivos e cd para mudar de diretório. Já no modo gráfico, essa interação é feita de forma visual e intuitiva através de ícones e janelas no Explorador de Arquivos, onde se pode clicar para abrir, copiar, arrastar e soltar arquivos e pastas.</p>
-              </div>
-          </div>
-      </div>
-
-     
-      <div class="bg-white rounded-xl shadow-md">
-          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card4')">
-              <h2 class="text-xl font-bold text-gray-800">O que é software de escritório?</h2>
-              <i id="icon4" class="fas fa-chevron-down text-gray-600 transition-transform"></i>
-          </div>
-          <div id="card4" class="max-h-0 overflow-hidden transition-all">
-              <div class="px-6 pb-6 text-gray-600">
-                  <p>Software de escritório, também conhecido como software de produtividade, é um conjunto de programas que auxiliam nas tarefas do dia a dia de um escritório, como a criação de documentos, planilhas e apresentações. Três exemplos comuns são o Microsoft Word (editor de texto), o Microsoft Excel (planilha eletrônica) e o Microsoft PowerPoint (editor de apresentações).</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-
-    <div class="flex justify-center items-start w-full lg:w-auto">
-      <img src="./imagens/Tecnologia_da_Informacao_Deltime.jpg"  class=" rounded-2xl w-[400px] h-[400px] object-contain">
-    </div>
 
   </div>
 </section>

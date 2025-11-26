@@ -41,85 +41,167 @@
    <div class="w-full h-[2px] bg-white"></div>
 
 <section id="perguntas" class="min-h-screen">
-  <h1 class="text-white text-5xl text-center font-bold mt-10">perguntas</h1>
+  <div class="max-w-4xl mx-auto">
+        <!-- Cabeçalho -->
+        <div class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-blue-400 mb-2">Algoritmos e Fluxogramas</h1>
+            <p class="text-gray-400">Conceitos fundamentais de lógica de programação</p>
+        </div>
 
-  <div data-aos="fade-down" class="flex flex-col lg:flex-row justify-between items-start px-20 mt-16 gap-10">
+        <!-- Container dos Cards -->
+        <div class="space-y-6">
+            
+            <!-- Card 1 - Fluxogramas -->
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700">
+                            <i class="fas fa-project-diagram text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que são fluxogramas? Qual a sua simbologia básica?</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <p class="mb-4">Fluxogramas são diagramas visuais que representam a sequência de passos de um processo ou fluxo de trabalho. Eles usam uma variedade de símbolos padronizados e setas para mostrar as etapas, decisões e o fluxo de informações de maneira clara e concisa.</p>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <p class="text-blue-400 font-semibold mb-2">Simbologia básica:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><span class="text-green-400 font-medium">Oval/Elipse:</span> Início e fim do processo</li>
+                            <li><span class="text-yellow-400 font-medium">Retângulo:</span> Processo/ação a ser executada</li>
+                            <li><span class="text-red-400 font-medium">Losango:</span> Decisão (sim/não, verdadeiro/falso)</li>
+                            <li><span class="text-purple-400 font-medium">Paralelogramo:</span> Entrada/saída de dados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-  
-    <div class="space-y-6">
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card1', 'icon1')">
-              <h2 class="text-xl font-bold text-gray-800">O que são fluxogramas? Qual a sua simbologia básica?</h2>
-              <i id="icon1" class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
-          </div>
-          <div id="card1" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-              <div class="px-6 pb-6 text-gray-600">
-                  <p>Fluxogramas são diagramas visuais que representam a sequência de passos de um processo ou fluxo de trabalho. Eles usam uma variedade de símbolos padronizados e setas para mostrar as etapas, decisões e o fluxo de informações de maneira clara e concisa. A simbologia básica inclui oval/elipse para início e fim, retângulo para um processo/ação, losango para decisões, e paralelogramo para entrada/saída de dados.</p>
-              </div>
-          </div>
-      </div>
-      
-      
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card2', 'icon2')">
-              <h2 class="text-xl font-bold text-gray-800">O que são algoritmos? Onde são usados?</h2>
-              <i id="icon2" class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
-          </div>
-          <div id="card2" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-              <div class="px-6 pb-6 text-gray-600">
-                  <p>Um algoritmo é uma sequência de instruções bem definidas, normalmente usadas para resolver problemas de matemática específicos, executar tarefas, ou para realizar cálculos e equações. A origem da palavra remete a Al Khowarizmi, famoso matemático árabe do século IX.</p>
-              </div>
-          </div>
-      </div>
-      
-      
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card3', 'icon3')">
-              <h2 class="text-xl font-bold text-gray-800">O que são variáveis e constantes?</h2>
-              <i id="icon3" class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
-          </div>
-          <div id="card3" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-              <div class="px-6 pb-6 text-gray-600">
-                  <p>Em programação, uma variável é um item de dados nomeado cujo valor pode ser alterado durante a execução de um programa, funcionando como uma caixa que pode guardar diferentes conteúdos. Já uma constante é um item de dados nomeado com um valor predefinido que não pode ser modificado após sua definição, permanecendo fixo durante todo o programa.</p>
-              </div>
-          </div>
-      </div>
-      
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card4', 'icon4')">
-              <h2 class="text-xl font-bold text-gray-800">Quais os tipos de dados mais usados em algoritmos (portugol)?</h2>
-              <i id="icon4" class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
-          </div>
-          <div id="card4" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-              <div class="px-6 pb-6 text-gray-600">
-                  <p>Os tipos de dados mais usados em algoritmos (Portuguol) são inteiro, real, caractere, cadeia (string), booleano e vetor. O tipo inteiro armazena números sem casas decimais, o real armazena números com casas decimais, e o caractere representa um único caractere. A cadeia armazena sequências de caracteres (texto), o booleano armazena os valores lógicos verdadeiro ou falso, e o vetor é usado para armazenar múltiplos valores do mesmo tipo em uma única estrutura.</p>
-              </div>
-          </div>
-      </div>
-      
-     
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="flex justify-between items-center p-6 cursor-pointer" onclick="toggleCard('card5', 'icon5')">
-              <h2 class="text-xl font-bold text-gray-800">O que é o portugol? O que é o Portugol Studio?</h2>
-              <i id="icon5" class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
-          </div>
-          <div id="card5" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-              <div class="px-6 pb-6 text-gray-600">
-                  <p>Portugol é uma linguagem de programação fictícia usada para ensinar lógica de forma simples, pois utiliza comandos em português. Já o <strong>Portugol Studio</strong> é o programa onde esses algoritmos podem ser escritos, testados e executados, servindo como ambiente de aprendizado para iniciantes.</p>
-                  <div class="mt-4 bg-gray-100 p-4 rounded-lg">
-                      <p class="text-sm text-gray-500 italic">Imagem do Portugol Studio:</p>
-                      <div class="h-40 bg-gray-200 rounded flex items-center justify-center mt-2">
-                          <span class="text-gray-500">[Imagem do Portugol Studio]</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+            <!-- Card 2 - Algoritmos -->
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700">
+                            <i class="fas fa-calculator text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que são algoritmos? Onde são usados?</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <p class="mb-4">Um algoritmo é uma sequência de instruções bem definidas, normalmente usadas para resolver problemas de matemática específicos, executar tarefas, ou para realizar cálculos e equações.</p>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <p class="text-green-400 font-semibold mb-2">Curiosidade histórica:</p>
+                        <p>A origem da palavra remete a <span class="font-bold">Al Khowarizmi</span>, famoso matemático árabe do século IX, considerado o pai da álgebra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 - Variáveis e Constantes -->
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-yellow-500 to-yellow-700">
+                            <i class="fas fa-exchange-alt text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que são variáveis e constantes?</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-yellow-400 font-semibold mb-2">Variável</h3>
+                            <p>É um item de dados nomeado cujo valor pode ser alterado durante a execução de um programa, funcionando como uma caixa que pode guardar diferentes conteúdos.</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-red-400 font-semibold mb-2">Constante</h3>
+                            <p>É um item de dados nomeado com um valor predefinido que não pode ser modificado após sua definição, permanecendo fixo durante todo o programa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 - Tipos de Dados -->
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-purple-500 to-purple-700">
+                            <i class="fas fa-database text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">Quais os tipos de dados mais usados em algoritmos (portugol)?</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-2">
+                                <span class="text-blue-400 font-semibold">• Inteiro:</span>
+                                <span>Números sem casas decimais</span>
+                            </div>
+                            <div class="flex items-start space-x-2">
+                                <span class="text-green-400 font-semibold">• Real:</span>
+                                <span>Números com casas decimais</span>
+                            </div>
+                            <div class="flex items-start space-x-2">
+                                <span class="text-yellow-400 font-semibold">• Caractere:</span>
+                                <span>Um único caractere</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-2">
+                                <span class="text-purple-400 font-semibold">• Cadeia:</span>
+                                <span>Sequências de caracteres (texto)</span>
+                            </div>
+                            <div class="flex items-start space-x-2">
+                                <span class="text-red-400 font-semibold">• Booleano:</span>
+                                <span>Valores lógicos (verdadeiro/falso)</span>
+                            </div>
+                            <div class="flex items-start space-x-2">
+                                <span class="text-indigo-400 font-semibold">• Vetor:</span>
+                                <span>Múltiplos valores do mesmo tipo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 - Portugol -->
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-800 hover:translate-y-[-5px] transition-transform duration-300">
+                <div class="flex justify-between items-center p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-pink-500 to-pink-700">
+                            <i class="fas fa-laptop text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O que é o portugol? O que é o Portugol Studio?</h2>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-gray-300">
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-pink-400 font-semibold mb-2">Portugol</h3>
+                            <p>É uma linguagem de programação fictícia usada para ensinar lógica de forma simples, pois utiliza comandos em português.</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-pink-400 font-semibold mb-2">Portugol Studio</h3>
+                            <p>É o programa onde esses algoritmos podem ser escritos, testados e executados, servindo como ambiente de aprendizado para iniciantes.</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+    <p class="text-gray-400 italic text-sm mb-2">Representação do Portugol Studio:</p>
+    <div class="h-40 bg-gray-700 rounded flex items-center justify-center">
+        <div class="text-center">
+            <img src="./imagens/logo_portugol.png" alt="Logo Portugol Studio" class="w-32 h-32 mx-auto mb-2 object-contain">
+            <p class="text-gray-500">Ambiente Portugol Studio</p>
+        </div>
+    </div>
 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </div>
+ 
 </section>
-<section id="projetos" class="grid grid-cols-3 gap-10 justify-center items-center">
+<section id="projetos" class="grid grid-cols-3 gap-10 justify-center items-center mb-10">
   <img src="./imagens/porEX1-removebg-preview.png" class="w-80 mx-auto" alt="">
   <img src="./imagens/porEX2-removebg-preview.png" class="w-80 mx-auto" alt="">
   <img src="./imagens/porEX3-removebg-preview.png" class="w-80 mx-auto" alt="">
